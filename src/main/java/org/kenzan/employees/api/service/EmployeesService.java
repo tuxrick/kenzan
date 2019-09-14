@@ -60,6 +60,7 @@ public class EmployeesService {
 	}		
 	
 	public Employees removeEmployee(long id){
+		employees.remove(3L);
 		return employees.remove(id);
 	}	
 	
