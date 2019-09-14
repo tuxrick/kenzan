@@ -18,7 +18,7 @@ public class MessageResource {
 	EmployeesService employeesService = new EmployeesService();
 	
 	@GET
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Employees> getEmployees() {
 		
 		return employeesService.getAllEmployees();
@@ -28,7 +28,7 @@ public class MessageResource {
 
 	@GET
 	@Path("/{employeeId}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Employees getEmployee(@PathParam("employeeId") long id){
 		//employeesService.getEmployee(employeeId);
 		
