@@ -17,19 +17,6 @@ public class EmployeesService {
 	String sDate1="31/12/1998";
 	//Date date1= new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);
 	
-	
-	/*
-	public List<Employees> getAllEmployees(){
-				
-		Employees e1 = new Employees(1L, "Ricardo", "Jose", "Hernandez", new Date() , "active");
-		Employees e2 = new Employees(2L, "Pepe", "Jose", "Hernandez", new Date(), "active");
-		List<Employees> list = new ArrayList<>();
-		list.add(e1); 
-		list.add(e2);
-		return list;
-	}
-	*/
-	
 	public EmployeesService(){
 		employees.put(1L, new Employees(1, "Ricardo", "Jose", "Hernandez", new Date() , "active"));
 		employees.put(2L, new Employees(2, "Pepe", "Jose", "Hernandez", new Date() , "active"));
@@ -60,7 +47,6 @@ public class EmployeesService {
 	}		
 	
 	public Employees removeEmployee(long id){
-		employees.remove(3L);
 		return employees.remove(id);
 	}	
 	
